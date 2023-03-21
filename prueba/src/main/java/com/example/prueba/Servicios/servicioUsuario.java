@@ -21,7 +21,16 @@ public class servicioUsuario {
     public String agregarUsuario(Usuario usu){
         lista.add(usu);
         return "Registro exitoso";
-
     }
 
+    public Usuario buscarUsuario(int codigo){
+        Usuario usu=null;
+        for(Usuario u: lista){
+            if (u.getId() == codigo){
+                usu=u;
+            }
+        }
+        return usu;
+    }
 }
+
