@@ -1,22 +1,20 @@
 package com.example.prueba.Entidades;
 
-public class Productos {
+public class Medicamentos {
 
     private int codigo;
     private String nombre;
     private double precio;
     private int cantidad;
     private double total;
-    private String categoria;
 
 
-    public Productos(int codigo, String nombre, double precio, int cantidad, double total, String categoria) {
+    public Medicamentos(int codigo, String nombre, double precio, int cantidad, double total) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
         this.total = total;
-        this.categoria = categoria;
     }
 
     public int getCodigo() {
@@ -59,11 +57,4 @@ public class Productos {
         this.total = total;
     }
 
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
 }

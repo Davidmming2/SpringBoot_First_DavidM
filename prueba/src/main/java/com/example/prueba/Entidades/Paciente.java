@@ -2,20 +2,20 @@ package com.example.prueba.Entidades;
 
 import java.time.LocalDate;
 
-public class Usuario {
+public class Paciente {
     private int id;
     private String nombre;
-    private String pais;
+    private String especie;
     private LocalDate fecha;
-    private String correo;
+    private int edad;
 
 
-    public Usuario(int id, String nombre, String pais, LocalDate fecha, String correo) {
+    public Paciente(int id, String nombre, String especie, LocalDate fecha, int edad) {
         this.id = id;
         this.nombre = nombre;
-        this.pais = pais;
+        this.especie = especie;
         this.fecha = fecha;
-        this.correo = correo;
+        this.edad = edad;
     }
 
     public int getId() {
@@ -34,12 +34,12 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public String getPais() {
-        return pais;
+    public String getEspecie() {
+        return especie;
     }
 
-    public void setPais(String pais) {
-        this.pais = pais;
+    public void setEspecie(String especie) {
+        this.especie = especie;
     }
 
     public LocalDate getFecha() {
@@ -50,12 +50,12 @@ public class Usuario {
         this.fecha = fecha;
     }
 
-    public String getCorreo() {
-        return correo;
+    public int getEdad() {
+        return edad;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 }
 
