@@ -1,21 +1,21 @@
 package com.example.prueba.Entidades;
 
-public class Productos {
+public class Libro {
 
     private int codigo;
     private String nombre;
     private double precio;
-    private int cantidad;
-    private double total;
+    private String autor;
+    private String editorial;
     private String categoria;
 
 
-    public Productos(int codigo, String nombre, double precio, int cantidad, double total, String categoria) {
+    public Libro(int codigo, String nombre, double precio, String autor, String editorial, String categoria) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
-        this.cantidad = cantidad;
-        this.total = total;
+        this.autor = autor;
+        this.editorial = editorial;
         this.categoria = categoria;
     }
 
@@ -43,20 +43,20 @@ public class Productos {
         this.precio = precio;
     }
 
-    public int getCantidad() {
-        return cantidad;
+    public String getAutor() {
+        return autor;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
-    public double getTotal() {
-        return total;
+    public String getEditorial() {
+        return editorial;
     }
 
-    public void setTotal(double total) {
-        this.total = total;
+    public void setEditorial(String editorial) {
+        this.editorial = editorial;
     }
 
     public String getCategoria() {
