@@ -6,7 +6,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class servicioPaciente {
-
     ArrayList<Paciente> lista = new ArrayList<>();
 
     public servicioPaciente() {

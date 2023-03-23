@@ -58,4 +58,3 @@ public class Paciente {
         this.edad = edad;
     }
 }
-

@@ -1,16 +1,13 @@
 package com.example.prueba.Controlador;
 
 import com.example.prueba.Entidades.Medicamentos;
-import com.example.prueba.Servicios.ServicioMedicamentos;
+import com.example.prueba.Servicios.ServiciosMedicamentos;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 
-@RestController
-public class ControladorMedicamentos {
-
-    ServicioMedicamentos servicio = new ServicioMedicamentos();
+public class controladorMedicamentos {
+    ServiciosMedicamentos servicio = new ServiciosMedicamentos();
 
     @GetMapping("/listarMedicamentos")
     public ArrayList<Medicamentos> listar(){
@@ -31,5 +28,4 @@ public class ControladorMedicamentos {
     public ArrayList<Medicamentos> total(){
         return servicio.total();
     }
-
 }

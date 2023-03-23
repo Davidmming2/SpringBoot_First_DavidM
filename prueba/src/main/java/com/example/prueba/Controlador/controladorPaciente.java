@@ -1,4 +1,5 @@
 package com.example.prueba.Controlador;
+
 import com.example.prueba.Entidades.Paciente;
 import com.example.prueba.Servicios.servicioPaciente;
 import org.springframework.web.bind.annotation.*;
