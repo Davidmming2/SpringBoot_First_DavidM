@@ -5,11 +5,11 @@ import com.example.prueba.Entidades.Paciente;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class ServicioPaciente {
+public class servicioPaciente {
 
     ArrayList<Paciente> lista = new ArrayList<>();
 
-    public ServicioPaciente() {
+    public servicioPaciente() {
         lista.add(new Paciente(10, "Asrael", "Conejillo de indias", LocalDate.of(2023, 02, 28), 9));
         lista.add(new Paciente(11, "Kirara", "Tigrillo", LocalDate.of(2000, 05, 30), 4));
         lista.add(new Paciente(12, "Calipso", "Guacamaya", LocalDate.of(2009, 12, 01), 2));
