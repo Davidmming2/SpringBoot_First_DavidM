@@ -19,4 +19,10 @@ public class controladorUsuario {
     public String agregar(@RequestBody Usuario usuario){
         return servicio.agregarUsuario(usuario);
     }
+
+    @GetMapping("buscarUsuario/{cod}")
+    public Usuario buscarUsuario(@PathVariable("cod") int codigo){
+        return servicio.buscarUsuario(codigo);
+    }
+
 }
