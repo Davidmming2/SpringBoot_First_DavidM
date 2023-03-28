@@ -27,8 +27,7 @@ public class controladorLibro {
     }
 
     @DeleteMapping("/eliminarLibro/{cod}")
-    public String eliminarLibro(@PathVariable("cod") int codigo){
-        return Libro.eliminarLibro(codigo);
+    public String eliminarLibro(@PathVariable("cod") int codigo){return servicio.eliminarLbro(codigo);
     }
 
 }
