@@ -33,11 +33,11 @@ public class servicioLibro {
         return libro;
     }
 
-    public String eliminarLbro(int codgio){
+    public String eliminarLbro(int codigo){
         String valor="No se encontro el libro";
 
         for (Libro eli:lista){
-            if (eli.getCodigo()==codgio){
+            if (eli.getCodigo()==codigo){
                 lista.remove(eli);
                 valor="Libro eliminado exitosamente";
             }
