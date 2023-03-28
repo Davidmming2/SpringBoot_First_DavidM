@@ -25,4 +25,10 @@ public class controladorLibro {
     public Libro buscarLibro(@PathVariable("cod") int codigo){
         return servicio.buscarLibro(codigo);
     }
+
+    @DeleteMapping("/eliminarLibro/{cod}")
+    public String eliminarLibro(@PathVariable("cod") int codigo){
+        return Libro.eliminarLibro(codigo);
+    }
+
 }

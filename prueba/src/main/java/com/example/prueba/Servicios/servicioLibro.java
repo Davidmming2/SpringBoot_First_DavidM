@@ -32,4 +32,16 @@ public class servicioLibro {
         }
         return libro;
     }
+
+    public String eliminarLbro(int codgio){
+        String valor="No se encontro el libro";
+
+        for (Libro eli:lista){
+            if (eli.getCodigo()==codgio){
+                lista.remove(eli);
+                valor="Libro eliminado exitosamente";
+            }
+        }
+        return valor;
+    }
 }
